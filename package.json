@@ -5,6 +5,7 @@
   "homepage": "https://bootstrapdash.com/demo/star-admin-free/react/template/demo_1/preview",
   "private": true,
   "dependencies": {
+    "webpack": "4.44.2",
     "@fullcalendar/core": "^4.3.1",
     "@fullcalendar/daygrid": "^4.3.0",
     "@fullcalendar/interaction": "^4.3.0",
