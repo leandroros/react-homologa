@@ -5,6 +5,7 @@ import BasicElements from "../BasicElements";
 import dataConfig from "./../../../dataConfig.json";
 
 let endereco = dataConfig.endereco;
+let endereco_react = dataConfig.endereco_react;
 let ambiente_end = dataConfig.ambiente_end;
 let porta = dataConfig.porta;
 let porta_react = dataConfig.porta_react;
@@ -13,7 +14,7 @@ let endereco_localhost = dataConfig.endereco_localhost;
 let porta_localhost = dataConfig.porta_localhost;
 
 //Versão homologa 240219.1600
-const versao = '240305.1627';
+const versao = '240312.1301';
 
 console.log("%c Versão Front REACT: " + versao + " do ambiente " + ambiente_end, "color: black ; background-color: #00ff0085 ; font-weight: bold")
 
@@ -34,7 +35,7 @@ if (url.includes('ss=')) {
 }
 
 let AMBIENTE = endereco + ":" + porta; //'https://app.epsoft.com.br:8o25';
-let AMBIENTE_REACT = endereco + ":" + porta_react; // 'https://app.epsoft.com.br:3o03';  ATUALIZAR ESSE ENDEREÇO
+let AMBIENTE_REACT = endereco_react + ":" + porta_react; // 'https://app.epsoft.com.br:3o03';  ATUALIZAR ESSE ENDEREÇO
 
 
 if (window.document.URL.includes('localhost')) {

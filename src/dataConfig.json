@@ -1,5 +1,6 @@
 {
   "endereco": "https://homologa.epsoft.com.br",
+  "endereco_react": "https://react.epsoft.com.br",
   "endereco_localhost": "http://localhost",
   "porta_localhost": "8088",
   "ambiente_end": "AWSSERVERDEV",

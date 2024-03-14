@@ -17,7 +17,8 @@ function exibirOpcoes() {
     'PRODUCAO2',
     'DISCOVERYSCAN',
     'POC',
-    'WEBINAR'
+    'WEBINAR',
+    'DOCKER'
   ];
 
   const pergunta = [
@@ -39,6 +40,7 @@ function criarArquivoJSON(nomeAmbiente) {
 
   let jsonConfig = {
     endereco: '',
+    endereco_react:'',
     ambiente_end: '',
     porta: '',
     porta_react: '',
@@ -50,7 +52,20 @@ function criarArquivoJSON(nomeAmbiente) {
   switch (nomeAmbiente) {
     case 'HOMOLOGACAO':
       jsonConfig = {
-        endereco: 'https://homologa.epsoft.com.br',
+        endereco:  'https://homologa.epsoft.com.br',
+        endereco_react:'https://react.epsoft.com.br',
+        endereco_localhost: "http://localhost",
+        porta_localhost: "8088",
+        ambiente_end: 'AWSSERVERDEV',
+        porta: '8088',
+        porta_react: '3003',
+        porta_api: '5003',
+      }
+      break;
+    case 'HOMOLOGACAO-DOCKER':
+      jsonConfig = {
+        endereco:  'http://152.70.215.102/',
+        endereco_react:'http://152.70.215.102/',
         endereco_localhost: "http://localhost",
         porta_localhost: "8088",
         ambiente_end: 'AWSSERVERDEV',
@@ -61,7 +76,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'HOMOLOGACAO2':
       jsonConfig = {
-        endereco: 'https://homologa.epsoft.com.br',
+        endereco:  'https://homologa.epsoft.com.br',
+        endereco_react:'https://homologa.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8089",
         ambiente_end: 'AWSSERVERDEV2',
@@ -72,7 +88,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'PRODUCAO':
       jsonConfig = {
-        endereco: 'https://dlp.epsoft.com.br',
+        endereco:  'https://dlp.epsoft.com.br',
+        endereco_react:'https://dlp.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8085",
         ambiente_end: 'PROD',
@@ -83,7 +100,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'PRODUCAO1':
       jsonConfig = {
-        endereco: 'https://dlp.epsoft.com.br',
+        endereco:  'https://dlp.epsoft.com.br',
+        endereco_react:'https://dlp.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8015",
         ambiente_end: 'PROD1',
@@ -94,7 +112,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'PRODUCAO2':
       jsonConfig = {
-        endereco: 'https://dlp.epsoft.com.br',
+        endereco:  'https://dlp.epsoft.com.br',
+        endereco_react:'https://dlp.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8011",
         ambiente_end: 'PROD2',
@@ -105,7 +124,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'DISCOVERYSCAN':
       jsonConfig = {
-        endereco: 'https://scan.epsoft.com.br',
+        endereco:  'https://scan.epsoft.com.br',
+        endereco_react:'https://scan.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8089",
         ambiente_end: 'DISCOVERYSCAN',
@@ -116,7 +136,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'POC':
       jsonConfig = {
-        endereco: 'https://dlp.epsoft.com.br',
+        endereco:  'https://dlp.epsoft.com.br',
+        endereco_react:'https://dlp.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "8028",
         ambiente_end: 'POCNEW',
@@ -127,7 +148,8 @@ function criarArquivoJSON(nomeAmbiente) {
       break;
     case 'WEBINAR':
       jsonConfig = {
-        endereco: 'https://dlp.epsoft.com.br',
+        endereco:  'https://dlp.epsoft.com.br',
+        endereco_react:'https://dlp.epsoft.com.br',
         endereco_localhost: "http://localhost",
         porta_localhost: "9797",
         ambiente_end: 'WEBINAR',

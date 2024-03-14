@@ -91,7 +91,6 @@
   },
   "scripts": {
     "start": "set PORT=3003 && PORT=3003 react-scripts start || react-scripts start && node ./server",
-    "dev": "next dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
