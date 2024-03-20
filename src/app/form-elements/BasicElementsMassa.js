@@ -9,6 +9,8 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 import "./css/style.css";
 import Switch from "react-switch";
 import { NavLink } from 'react-router-dom';
+import { toast } from "react-toastify";
+
 
 
 /* CONFIGURACAO DE TABELA */
@@ -2235,6 +2237,16 @@ export class BasicElements extends Component {
      DlpController.trocaGrupo(payload)
       .then((response) => {
         console.log("Trocou o grupo")
+        toast.success(`Grupo atualizado para ${this.state.grupoDlp} com sucesso!`, {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+      });
 
         setTimeout(function () {
           window.location.href = `${DlpController.ambienteRedirecionamentoReact()}/flashsafe/conf/form-Elements/basic-elements-massa/?ss=${DlpController.capituraToken()}`;
@@ -2244,6 +2256,16 @@ export class BasicElements extends Component {
       })
       .catch((e) => {
         console.log(e);
+        toast.error(`Não foi possível atualizar o grupo.`, {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+      });
       });
   };
 

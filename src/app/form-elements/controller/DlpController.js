@@ -14,7 +14,7 @@ let endereco_localhost = dataConfig.endereco_localhost;
 let porta_localhost = dataConfig.porta_localhost;
 
 //Versão homologa 240219.1600
-const versao = '240312.1301';
+const versao = '240320.1239';
 
 console.log("%c Versão Front REACT: " + versao + " do ambiente " + ambiente_end, "color: black ; background-color: #00ff0085 ; font-weight: bold")
 
